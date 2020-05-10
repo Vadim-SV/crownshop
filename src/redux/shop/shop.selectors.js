@@ -1,16 +1,11 @@
 import {createSelector} from 'reselect';
-import collectionsOverviewComponent from '../../components/collections-overview/collections-overview.component';
-
-
-
 
 const selectShop = state => state.shop;
 
 
 export const selectCollections = createSelector (
-
   [selectShop],
-  shop => shop.Items
+  shop => shop.collections
 );
 
 export const selectCollectionsForPreview = createSelector (

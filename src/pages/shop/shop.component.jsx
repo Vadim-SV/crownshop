@@ -7,7 +7,7 @@ import {createStructuredSelector} from 'reselect';
 import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
 import {Route} from 'react-router-dom';
 
-import {selectCollection} from '../../redux/shop/shop.selectors';
+
 
 import CollectionPage from '../collection/collection.component';
 
@@ -19,9 +19,6 @@ const ShopPage = ({match}) => (
     );
 
 
-    const mapStateToProps = (state, ownProps) => ({
-      collection: selectCollection (ownProps.match.params.collectionId)
-    })
-
+  
 
 export default ShopPage;
